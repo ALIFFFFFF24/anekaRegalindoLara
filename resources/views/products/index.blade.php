@@ -31,10 +31,14 @@
          <td>{{ ++$i }}</td>
          <td>{{ $product->name }}</td>
          <td>{{ $product->material}}</td>
-         <td><img style="width: 50px" src="{{ url('client/images')}}/{{$product->photo}}" /></td>
+         <td>
+            <a href="{{ url('client/images')}}/{{$product->photo}}" data-toggle="lightbox">
+                <img style="width: 50px" src="{{ url('client/images')}}/{{$product->photo}}"/>
+            </a>
+        </td>
          <td>
                 <form action="{{ route('products.destroy',$product->id) }}" method="POST">
-                    <a class="btn btn-success" href="{{ route('products.show',$product->id) }}">Show</a>
+                    {{-- <a class="btn btn-success" href="{{ route('products.show',$product->id) }}">Show</a> --}}
                     @can('product-edit')
                     <a class="btn btn-primary" href="{{ route('products.edit',$product->id) }}">Edit</a>
                     @endcan
