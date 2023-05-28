@@ -60,9 +60,9 @@
               <h5 class="card-title">Production Capacity</h5>
               <p class="card-text">
                 <br>
-                    wood - 10 containers per month <br>  
-                    rattan - 12 containers per month <br>
-                    outdoor - 25 containers per month <br>
+                    wood - 20 containers per month <br>  
+                    rattan - 10 containers per month <br>
+                    outdoor - 40 containers per month <br>
               </p>
             </div>
           </div>

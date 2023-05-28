@@ -7,8 +7,9 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
   
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>PT ANEKA REGALINDO</title>
   
+    <link rel="icon" href="{{url('client/images/logo-aneka.ico')}}">
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">

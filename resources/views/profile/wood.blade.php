@@ -125,8 +125,8 @@
     let containers = document.getElementById('wood-containers');
     let workers = document.getElementById('wood-workers');
     const load = () => {
-       animate(containers, 0, 20, 2000);
-       animate(workers, 0, 200, 2000);
+       animate(containers, 0, 20, 5000);
+       animate(workers, 0, 200, 5000);
     }
  </script>
 @endsection

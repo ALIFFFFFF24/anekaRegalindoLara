@@ -7,8 +7,6 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
   
-    <title>{{ config('app.name', 'Laravel') }}</title>
-  
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
@@ -18,7 +16,9 @@
 
     <link rel="stylesheet" href="{{ URL::asset('css/style.css'); }} ">
 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>PT ANEKA REGALINDO</title>
+  
+    <link rel="icon" href="{{url('client/images/logo-aneka.ico')}}">
 </head>
 <body onload="load()">
     <div id="app">
