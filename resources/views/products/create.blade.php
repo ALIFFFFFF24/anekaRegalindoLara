@@ -25,14 +25,14 @@
       <div class="col-xs-12 col-sm-12 col-md-12">
           <div class="form-group">
               <strong>Name :</strong>
-              <input type="text" name="name" class="form-control" placeholder="Name">
+              <input type="text" name="name" class="form-control w-50" placeholder="Name">
           </div>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-12">
           <div class="form-group">
               <strong>Material :</strong>
               <select class="form-control main w-25" name="material_id">
-                <option selected>-- Pilih Kategori --</option>
+                <option selected>-- Choose Material --</option>
                 @foreach ($materials as $m)
                         <option value="{{$m->id}}">{{$m->name}}</option>
                         @endforeach
@@ -42,7 +42,7 @@
       <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
             <strong>Product Image :</strong>
-            <input class="form-control" type="file" name="photo">
+            <input class="form-control w-25" type="file" name="photo">
         </div>
     </div>
       <div class="col-xs-12 col-sm-12 col-md-12 mt-2 text-end">

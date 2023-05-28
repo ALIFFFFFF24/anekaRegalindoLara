@@ -33,7 +33,7 @@ class ProductController extends Controller
         ->join('materials', 'materials.id', '=', 'products.material_id')
         ->select('products.*', 'materials.name as material')
         ->latest()
-        ->paginate(5);
+        ->get();
 
         $materials = DB::table('materials')->get();
 

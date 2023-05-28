@@ -40,12 +40,10 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
-                        @guest
+
                             <li><a class="nav-link" href="/wood">Wood Department</a></li>
-                            <li><a class="nav-link" href="/wood">Rattan Department</a></li>
-                            <li><a class="nav-link" href="/wood">Outdoor Department</a></li>
-                            <li><a class="nav-link" href="/wood">Contact Us</a></li>
-                        @endguest
+                            <li><a class="nav-link" href="/rattan">Rattan Department</a></li>
+                            <li><a class="nav-link" href="/outdoor">Outdoor Department</a></li>
                     </ul>
                 </div>
             </div>

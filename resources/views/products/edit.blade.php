@@ -23,13 +23,13 @@
      @csrf
         @method('PUT')
          <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12">
+      <div class="col-xs-12 col-sm-12 col-md-12 py-3">
           <div class="form-group">
               <strong>Name :</strong>
-              <input type="text" name="name" value="{{ $product->name }}" class="form-control" placeholder="Name">
+              <input type="text"  name="name" value="{{ $product->name }}" class="form-control w-50" placeholder="Name">
           </div>
       </div>
-      <div class="col-xs-12 col-sm-12 col-md-12">
+      <div class="col-xs-12 col-sm-12 col-md-12 py-3">
           <div class="form-group">
               <strong>Material :</strong>
               <select class="form-control main w-25" name="material_id">
@@ -41,7 +41,7 @@
             </select>
           </div>
       </div>
-      <div class="col-xs-12 col-sm-12 col-md-12">
+      <div class="col-xs-12 col-sm-12 col-md-12 py-3">
         <div class="form-group">
             <label class="form-label" for="nama">Product Image</label>
             <input class="form-control w-25" name="photo" type="file" >

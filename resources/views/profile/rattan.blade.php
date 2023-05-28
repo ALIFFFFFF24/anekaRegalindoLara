@@ -3,32 +3,31 @@
 @section('content')
 <div class="section1"> 
     <div class="container col-xxl-8 px-4 py-5">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6">
-            <img src="{{url('client/images/hero 1.png')}}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-          </div>
-          <div class="col-lg-6">
-            <h1 class="display-5 fw-bold lh-1 mb-3">About Us</h1>
-            <p class="lead">Established in 1987, Aneka Regalindo boasts over 30 years of expertise in crafting premium furniture for retail powerhouse and design projects globally.</p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <a class="btn btn-outline-danger px-4 me-md-2" href="#contact" >Reach Out To Us</a>
-            </div>
+        <div class="row align-items-center g-5 py-5">
+          <div class="col-11">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Rattan Department</h1>
+            <p class="lead">
+              The rattan department at our organization is a haven of creativity and craftsmanship, dedicated to harnessing the natural beauty and versatility of rattan. As one enters this bustling section, they are greeted by the sight of skilled artisans meticulously weaving and shaping slender rattan strands into stunning furniture pieces and decorative items. Rattan, with its flexible and durable nature, offers endless possibilities for creating unique and eye-catching designs. Our talented craftsmen and craftswomen utilize traditional weaving techniques passed down through generations, combining them with contemporary styles to produce exquisite rattan furniture that seamlessly blends timeless charm with modern aesthetics. From elegant rattan chairs and intricate woven baskets to intricate lampshades and intricate room dividers, each creation showcases the artistry and dedication of our rattan artisans. The rattan department is not just a workspace; it is a celebration of nature's gift and an ode to the beauty of handcrafted furniture. With a commitment to sustainability, we source our rattan materials responsibly, ensuring that our creations not only adorn spaces but also contribute to a greener and more eco-conscious future.
+            </p>
           </div>
         </div>
       </div> 
   </div>
   <div class="section2">
     <div class="container col-xxl-8 px-4 py-5">
-        <div class="row align-items-center g-5 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6">
-            <img src="{{url('client/images/hero 2.png')}}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            <img src="{{url('client/images/facilities/7.jpg')}}" class="d-block mx-lg-auto img-fluid" width="700" height="500" loading="lazy">
           </div>
           <div class="col-lg-6">
-            <h1 class="display-5 fw-bold lh-1 mb-3">Experts at our craft</h1>
-            <p class="lead">We offer expertise across 3 diverse departments - wood, rattan, and outdoor.
+            <h1 class="display-5 fw-bold lh-1 mb-3">Facilities</h1>
+            <p class="lead">
+                <strong>Facilities Include</strong>
                 <br>
-                <br>
-                We possess a wealth of knowledge across a spectrum of materials, enabling clients to blend materials for creative and versatile designs.
+                - Disinfection Pool <br>
+                - High-power Steamer <br>
+                - Overhang Finishing Facility <br>
+                - Complete Machinery For Making Rattan Furniture <br>
             </p>
           </div>
         </div>
@@ -36,13 +35,11 @@
   </div>
   <div class="section3">
     <div class="container col-xxl-8 px-4 py-5">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6">
-            <img src="{{url('client/images/hero 3.png')}}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-          </div>
-          <div class="col-lg-6">
-            <h1 class="display-5 fw-bold lh-1 mb-3">Everything under one roof</h1>
-            <p class="lead">We provide a comprehensive and seamless experience, with in-house cushion making, carton box production, label printing, and shipment services for efficient delivery.
+        <div class="row align-items-center g-5 py-5">
+          <div class="col">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Materials</h1>
+            <p class="lead">
+              At our furniture manufacturing company, we pride ourselves on utilizing a diverse range of exquisite materials to craft exceptional pieces. We harness the natural beauty of batang, tohiti, and lambang core woods, each with its unique grain patterns and rich tones, to create furniture that exudes warmth and elegance. Rattan peel and rattan flat over cover are meticulously woven, adding a touch of intricate craftsmanship to our designs. Water hyacinth and sea grass, harvested responsibly, provide texture and a rustic charm to our furniture pieces. Banana bark, known for its strength and flexibility, is skillfully incorporated into our creations, adding a touch of natural authenticity. Additionally, leather, with its timeless appeal and luxurious feel, elevates our furniture to new heights of sophistication. Each material is thoughtfully selected and integrated into our designs, ensuring that every piece we produce reflects the inherent beauty and quality of these exceptional materials. From stunning dining sets to cozy armchairs and intricate coffee tables, our furniture exemplifies the harmonious fusion of craftsmanship and the natural allure of batang, tohiti, lambang core, rattan peel, rattan flat over cover, water hyacinth, sea grass, banana bark, and leather.
             </p>
           </div>
         </div>
@@ -51,7 +48,7 @@
   <div class="section4">
     <div class="container col-xxl-8 px-4 py-5">
       <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
+        <div class="col-lg-4">
           <div class="card">
             <div class="card-body text-center">
               <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-box-seam" viewBox="0 0 16 16">
@@ -59,96 +56,92 @@
               </svg>
               <h5 class="card-title">Production Capacity</h5>
               <p class="card-text">
-                <br>
-                    wood - 10 containers per month <br>  
-                    rattan - 12 containers per month <br>
-                    outdoor - 25 containers per month <br>
+                    <p id="rattan-containers">0</p> containers per month  
               </p>
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-lg-4">
           <div class="card text-center">
             <div class="card-body">
-              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
-                <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
-              </svg>
-              <h5 class="card-title">Customers</h5>
-              <p class="card-text">ISHINO RATTAN Ltd - Japan,
-                SEAWINDS Trading Co. - USA,
-                WESTELM - USA,
-                MECOX - USA,
-                CANAFOAM - Canada</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                  </svg>
+              <h5 class="card-title">Workers</h5>
+              <p class="card-text"><p id="rattan-workers">0</p> peoples</p>
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-lg-4">
           <div class="card text-center">
             <div class="card-body">
-              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
-                <path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"/>
-              </svg>
-              <h5 class="card-title">Production Lead Time</h5>
-              <p class="card-text">
-                Sample 1 – 4 weeks depends on the design difficulties
-                Regular 30 - 45 days on low season
-                45 - 60 days on peak season
-              </p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                  </svg>
+              <h5 class="card-title">Weavers</h5>
+              <p class="card-text"><p id="rattan-weavers">0</p> peoples</p>
             </div>
           </div>
         </div>
       </div>
       </div> 
   </div>
-  <div class="section5">
+  <div class="section7">
     <div class="container col-xxl-8 px-4 py-5">
-        <div class="row align-items-center g-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6">
-            <img src="{{url('client/images/facilities/8.jpg')}}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-          </div>
+        <div class="row align-items-center">
           <div class="col-lg-6">
-            <h1 class="display-5 fw-bold lh-1 mb-3">Production</h1>
-            <p class="lead">Our state-of-the-art factories specialize in the creation of exquisite furniture made from a diverse range of materials. We bring together wood, rattan, aluminum, and synthetic fibers to produce exceptional pieces that captivate the senses. Our skilled artisans meticulously transform raw materials into stunning wooden furniture, showcasing the natural beauty and elegance of each grain. 
-            </p>
+            <h1 class="display-5 fw-bold lh-1 mb-3">Rattan Products</h1>
           </div>
         </div>
+        <div class="row">
+            @foreach ($products as $product)
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="{{ url('client/images')}}/{{$product->photo}}" data-toggle="lightbox">
+                  <img class="img-fluid img-thumbnail" src="{{ url('client/images')}}/{{$product->photo}}" alt="">
+                </a>
+              </div>
+              @endforeach
+          </div>
       </div> 
   </div>
-  <div class="section6">
-    <div class="container col-xxl-8 px-4 py-5">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6">
-            <img src="{{url('client/images/facilities/1.jpg')}}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-          </div>
-          <div class="col-lg-6">
-            <h1 class="display-5 fw-bold lh-1 mb-3">Facilities</h1>
-            <p class="lead">Our factories boast advanced technologies and expertise in plastic extrusion, aluminum extrusion, and powder coating. With a commitment to innovation and excellence, our factories deliver outstanding furniture and products that meet the highest standards.
-            </p>
-          </div>
-        </div>
-      </div> 
-  </div>
-  <div id="contact" class="section7">
-    <div class="container col-xxl-8 px-4 py-5">
-        <div class="row align-items-center g-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6">
-            <div style="width: 100%"><iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Jl.%20Raya%20Trosobo%20No.111,%20Sabowidoro,%20Trosobo,%20Kec.%20Taman,%20Kabupaten%20Sidoarjo,%20Jawa%20Timur%2061257+(PT%20ANEKA%20REGALINDO)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">area maps</a></iframe></div>
-          </div>
-          <div class="col-lg-6">
-            <h1 class="display-5 fw-bold lh-1 mb-3">Contact Us</h1>
-            <p class="lead">
-              No. 111 Jalan Raya Trosobo, Taman, Sidoarjo, East Java 61257
-              <br>
-              <h4 style="font-weight: bold"> Indoor Furniture Inquiry</h4>
-              wood@anekaregalindo.com <br>
-              rattan@anekaregalindo.com
-              <br>
-              <br>
-              <h4 style="font-weight: bold">Outdoor Furniture Inquiry </h4>
-              outdoor@anekaregalindo.com
-            </p>
-          </div>
-        </div>
-      </div> 
-  </div>
+  <script>
+    function animate(obj, initVal, lastVal, duration) {
+       let startTime = null;
+
+    //get the current timestamp and assign it to the currentTime variable
+    let currentTime = Date.now();
+
+    //pass the current timestamp to the step function
+    const step = (currentTime ) => {
+
+    //if the start time is null, assign the current time to startTime
+    if (!startTime) {
+       startTime = currentTime ;
+    }
+
+    //calculate the value to be used in calculating the number to be displayed
+    const progress = Math.min((currentTime - startTime)/ duration, 1);
+
+    //calculate what to be displayed using the value gotten above
+    obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
+
+    //checking to make sure the counter does not exceed the last value (lastVal)
+    if (progress < 1) {
+       window.requestAnimationFrame(step);
+    } else {
+          window.cancelAnimationFrame(window.requestAnimationFrame(step));
+       }
+    };
+    //start animating
+       window.requestAnimationFrame(step);
+    }
+    let containers = document.getElementById('rattan-containers');
+    let workers = document.getElementById('rattan-workers');
+    let weavers = document.getElementById('rattan-weavers');
+    const load = () => {
+       animate(containers, 0, 10, 5000);
+       animate(workers, 0, 50, 5000);
+       animate(weavers, 0, 50, 5000);
+    }
+ </script>
 @endsection
