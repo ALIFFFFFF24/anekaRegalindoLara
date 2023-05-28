@@ -17,13 +17,15 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
     <link rel="stylesheet" href="{{ URL::asset('css/style.css'); }} ">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body>
+<body onload="load()">
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar fixed-top navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img style="width: 200px" src="{{url('client/images/logo-regalindo.png')}}" alt="">
+                    <img style="width: 300px" src="{{url('client/images/logo-regalindo.png')}}" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -39,10 +41,10 @@
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
                         @guest
-                            <li><a class="nav-link" href="{{ route('users.index') }}">Wood Department</a></li>
-                            <li><a class="nav-link" href="{{ route('roles.index') }}">Rattan Department</a></li>
-                            <li><a class="nav-link" href="{{ route('products.index') }}">Outdoor Department</a></li>
-                            <li><a class="nav-link" href="{{ route('materials.index') }}">Contact Us</a></li>
+                            <li><a class="nav-link" href="/wood">Wood Department</a></li>
+                            <li><a class="nav-link" href="/wood">Rattan Department</a></li>
+                            <li><a class="nav-link" href="/wood">Outdoor Department</a></li>
+                            <li><a class="nav-link" href="/wood">Contact Us</a></li>
                         @endguest
                     </ul>
                 </div>

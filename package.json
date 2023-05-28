@@ -14,6 +14,8 @@
         "vite": "^4.0.0"
     },
     "dependencies": {
+        "bootstrap-icons": "^1.10.5",
+        "boxicons": "^2.1.4",
         "bs5-lightbox": "^1.8.3"
     }
 }
