@@ -1,18 +1,16 @@
 @extends('layouts.web')
 
 @section('content')
-<div class="section1"> 
+@foreach ($rattans as $rattan)
     <div class="container col-xxl-8 px-4 py-5">
-        <div class="row align-items-center g-5 py-5">
-          <div class="col-11">
-            <h1 class="display-5 fw-bold lh-1 mb-3">Rattan Department</h1>
-            <p class="lead">
-              The rattan department at our organization is a haven of creativity and craftsmanship, dedicated to harnessing the natural beauty and versatility of rattan. As one enters this bustling section, they are greeted by the sight of skilled artisans meticulously weaving and shaping slender rattan strands into stunning furniture pieces and decorative items. Rattan, with its flexible and durable nature, offers endless possibilities for creating unique and eye-catching designs. Our talented craftsmen and craftswomen utilize traditional weaving techniques passed down through generations, combining them with contemporary styles to produce exquisite rattan furniture that seamlessly blends timeless charm with modern aesthetics. From elegant rattan chairs and intricate woven baskets to intricate lampshades and intricate room dividers, each creation showcases the artistry and dedication of our rattan artisans. The rattan department is not just a workspace; it is a celebration of nature's gift and an ode to the beauty of handcrafted furniture. With a commitment to sustainability, we source our rattan materials responsibly, ensuring that our creations not only adorn spaces but also contribute to a greener and more eco-conscious future.
-            </p>
-          </div>
+      <div class="row align-items-center g-5 py-5">
+        <div class="col-11">
+          <h1 class="display-5 fw-bold lh-1 mb-3">{{$rattan->title}}</h1>
+          <p class="lead">{{$rattan->caption}}</p>
         </div>
-      </div> 
-  </div>
+      </div>
+    </div> 
+@endforeach
   <div class="section2">
     <div class="container col-xxl-8 px-4 py-5">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
@@ -28,18 +26,6 @@
                 - High-power Steamer <br>
                 - Overhang Finishing Facility <br>
                 - Complete Machinery For Making Rattan Furniture <br>
-            </p>
-          </div>
-        </div>
-      </div> 
-  </div>
-  <div class="section3">
-    <div class="container col-xxl-8 px-4 py-5">
-        <div class="row align-items-center g-5 py-5">
-          <div class="col">
-            <h1 class="display-5 fw-bold lh-1 mb-3">Materials</h1>
-            <p class="lead">
-              At our furniture manufacturing company, we pride ourselves on utilizing a diverse range of exquisite materials to craft exceptional pieces. We harness the natural beauty of batang, tohiti, and lambang core woods, each with its unique grain patterns and rich tones, to create furniture that exudes warmth and elegance. Rattan peel and rattan flat over cover are meticulously woven, adding a touch of intricate craftsmanship to our designs. Water hyacinth and sea grass, harvested responsibly, provide texture and a rustic charm to our furniture pieces. Banana bark, known for its strength and flexibility, is skillfully incorporated into our creations, adding a touch of natural authenticity. Additionally, leather, with its timeless appeal and luxurious feel, elevates our furniture to new heights of sophistication. Each material is thoughtfully selected and integrated into our designs, ensuring that every piece we produce reflects the inherent beauty and quality of these exceptional materials. From stunning dining sets to cozy armchairs and intricate coffee tables, our furniture exemplifies the harmonious fusion of craftsmanship and the natural allure of batang, tohiti, lambang core, rattan peel, rattan flat over cover, water hyacinth, sea grass, banana bark, and leather.
             </p>
           </div>
         </div>

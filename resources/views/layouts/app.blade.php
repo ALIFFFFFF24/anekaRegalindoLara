@@ -52,11 +52,53 @@
                                 </li>
                             @endif
                         @else
-                            <li><a class="nav-link" href="{{ route('users.index') }}">Manage Users</a></li>
-                            <li><a class="nav-link" href="{{ route('roles.index') }}">Manage Role</a></li>
-                            <li><a class="nav-link" href="{{ route('products.index') }}">Manage Product</a></li>
-                            <li><a class="nav-link" href="{{ route('materials.index') }}">Manage Material</a></li>
-                            <li><a class="nav-link" href="{{ url('/') }}">Go To Page</a></li>
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    Manage Pages
+                                </a>
+  
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('homes.index') }}">
+                                        Manage Home Page
+                                    </a>
+  
+                                    <a class="dropdown-item" href="{{ route('woods.index') }}">
+                                        Manage Wood Page
+                                    </a>
+
+                                    <a class="dropdown-item" href="{{ route('rattans.index') }}">
+                                        Manage Rattan Page
+                                    </a>
+
+                                    <a class="dropdown-item" href="{{ route('outdoors.index') }}">
+                                        Manage Outdoor Page
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    Manage Master Data
+                                </a>
+  
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('users.index') }}">
+                                        Manage Users
+                                    </a>
+
+                                    <a class="dropdown-item" href="{{ route('roles.index') }}">
+                                        Manage Roles
+                                    </a>
+
+                                    <a class="dropdown-item" href="{{ route('facilities.index') }}">
+                                        Manage Facilities
+                                    </a>
+
+                                    <a class="dropdown-item" href="{{ route('products.index') }}">
+                                        Manage Products
+                                    </a>
+                                </div>
+                            </li>
+                            <li><a class="nav-link" href="{{ url('/') }}">Go To Website</a></li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}

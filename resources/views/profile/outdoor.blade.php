@@ -1,18 +1,19 @@
 @extends('layouts.web')
 
 @section('content')
-<div class="section1"> 
+@php
+$no = 0;
+@endphp
+@foreach ($outdoors as $outdoor)
     <div class="container col-xxl-8 px-4 py-5">
-        <div class="row align-items-center g-5 py-5">
-          <div class="col-11">
-            <h1 class="display-5 fw-bold lh-1 mb-3">Outdoor Department</h1>
-            <p class="lead">
-              Our outdoor furniture department is dedicated to bringing comfort, style, and durability to the great outdoors. As nature enthusiasts ourselves, we understand the importance of creating functional and aesthetically pleasing furniture that can withstand the elements. From sprawling gardens to cozy balconies, our outdoor furniture collection is designed to transform any outdoor space into a haven of relaxation and enjoyment. Using weather-resistant materials such as teak, aluminum, and synthetic wicker, we craft sturdy and long-lasting furniture pieces that can endure sun, rain, and wind. Our designers draw inspiration from the natural surroundings, creating innovative and ergonomic designs that seamlessly blend with the outdoor environment. Whether it's a spacious dining set for al fresco gatherings, a cozy lounge chair for soaking up the sun, or a sleek patio sofa for evening conversations, our outdoor furniture combines functionality with style, ensuring that every moment spent outdoors is a comfortable and memorable one. With attention to detail and a commitment to quality, our outdoor furniture department aims to enhance outdoor living experiences and create spaces where nature and comfort coexist in perfect harmony.
-            </p>
-          </div>
+      <div class="row align-items-center g-5 py-5">
+        <div class="col-11">
+          <h1 class="display-5 fw-bold lh-1 mb-3">{{$outdoor->title}}</h1>
+          <p class="lead">{{$outdoor->caption}}</p>
         </div>
-      </div> 
-  </div>
+      </div>
+    </div> 
+@endforeach
   <div class="section2">
     <div class="container col-xxl-8 px-4 py-5">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
@@ -29,18 +30,6 @@
                 - Powder Coat Conveyor <br>
                 - Weld and Polish Machinery <br>
                 - Complete Machinery For Making Outdoor Furniture <br>
-            </p>
-          </div>
-        </div>
-      </div> 
-  </div>
-  <div class="section3">
-    <div class="container col-xxl-8 px-4 py-5">
-        <div class="row align-items-center g-5 py-5">
-          <div class="col">
-            <h1 class="display-5 fw-bold lh-1 mb-3">Materials</h1>
-            <p class="lead">
-              At our furniture manufacturing company, we specialize in crafting high-quality furniture using a combination of premium materials. Our expertise lies in working with aluminum solid poles and hollow tubes, as well as HDPE synthetic rattan peel and core. Aluminum, known for its lightweight yet durable properties, forms the backbone of our designs, providing stability and strength. Solid poles and hollow tubes are meticulously shaped and welded to create sturdy frames that withstand the test of time. HDPE synthetic rattan peel and core, with their remarkable resemblance to natural rattan, offer a sustainable alternative without compromising on aesthetics. These materials are expertly woven into intricate patterns, adding texture and visual interest to our furniture pieces. Our skilled craftsmen and craftswomen pay careful attention to every detail, ensuring that the aluminum and HDPE synthetic rattan components seamlessly merge to create furniture that is not only visually appealing but also resistant to weathering and easy to maintain. From elegant dining sets and comfortable lounge chairs to stylish outdoor sofas and functional patio tables, our furniture collections showcase the harmonious combination of aluminum solid poles, aluminum hollow tubes, HDPE synthetic rattan peel, and core. With our commitment to quality and innovative design, we strive to provide our customers with outdoor furniture that embodies both durability and timeless style.
             </p>
           </div>
         </div>
